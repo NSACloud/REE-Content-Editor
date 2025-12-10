@@ -616,7 +616,7 @@ public partial class FileTesterWindow : IWindowHandler
         AddCompareMapper<Tmlfsm2File>((m) => [m.BehaviorTrees, m.Clips]);
 
         AddCompareMapper<EfxFile>((m) => [m.Header, m.Entries, m.Strings, m.BoneRelations, m.Bones, m.ExpressionParameters, m.FieldParameterValues, m.UvarGroups, m.parentFile != null]);
-        AddCompareMapper<EfxHeader>((m) => [m.actionCount, m.boneAttributeEntryCount, m.boneCount, m.effectGroupsCount, m.effectGroupsLength, m.entryCount, m.expressionParameterCount, m.fieldParameterCount, m.ukn, m.uknFlag]);
+        AddCompareMapper<EfxHeader>((m) => [m.actionCount, m.boneAttributeEntryCount, m.boneCount, m.effectGroupsCount, m.effectGroupsLength, m.entryCount, m.expressionParameterCount, m.fieldParameterCount, m.dimensionType, m.propBindingIndexCount]);
         AddCompareMapper<EFXEntry>((m) => [m.Attributes, m.entryAssignment, m.index, m.name, m.nameHash, m.Groups.Order()]);
         AddCompareMapper<ReeLib.Efx.Strings>((m) => [m.ActionNames, m.BoneNames, m.EfxNames, m.ExpressionParameterNames, m.FieldParameterNames, m.GroupNames.Order()]);
         AddCompareMapper<EFXExpressionParameter>((m) => [m.expressionParameterNameUTF16Hash, m.expressionParameterNameUTF8Hash, m.name, m.type, m.value1, m.value2, m.value3]);
